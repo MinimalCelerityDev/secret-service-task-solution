@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function SecretPage({ params }: { params: { id: string } }) {
 
@@ -23,7 +22,7 @@ export default function SecretPage({ params }: { params: { id: string } }) {
     };
 
     fetchSecret();
-    
+
   }, [params.id]);
 
   return (
